@@ -192,7 +192,7 @@ public struct InfiniteCarousel<
                     }
                 }
             }
-            .introspect(.scrollView, on: .iOS(.v15...)) { scrollView in
+            .introspect(.scrollView, on: .iOS(.v15...)) { @MainActor scrollView in
                 manager.registerScrollView(scrollView: scrollView)
             }
         }
